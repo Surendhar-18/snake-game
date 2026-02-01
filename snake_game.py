@@ -78,7 +78,7 @@ wn.onkeypress(go_right, "Right")
 
 # Main game loop
 while True:
-    wn.update()  # type: ignore
+    wn.update()
 
     # Border collision
     if head.xcor() > 290 or head.xcor() < -290 or head.ycor() > 290 or head.ycor() < -290:
@@ -141,3 +141,4 @@ while True:
     time.sleep(delay)
 
 wn.mainloop()
+
